@@ -6,8 +6,9 @@
   ------------------------------------------------------------------------------
   修正履歴 (修正日：担当者：修正内容)
   [2025/8/18]：[HinakoTakada/SYS]：[商品名に未入力チェック追加]
-    [2025/8/18]：[HinakoTakada/SYS]：[商品説明に未入力チェック追加]
-    [2025/8/18]：[HinakoTakada/SYS]：[商品価格に未入力チェック追加]
+  [2025/8/18]：[HinakoTakada/SYS]：[商品説明に未入力チェック追加]
+  [2025/8/18]：[HinakoTakada/SYS]：[商品価格に未入力チェック追加]
+  [2025/8/18]：[HinakoTakada/SYS]：[オプション課題1　フォーム送信時に商品編集画面の商品名入力チェックJavaScript関数の実行とJavaScriptの読み込み]
   ------------------------------------------------------------------------------%>
 
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
@@ -26,7 +27,7 @@
     <header class="row mb-3 mt-2">
         <h1>商品情報編集</h1>
     </header>
-    <form method="post" action="./edit-complete">
+    <form method="post" action="./edit-complete" onsubmit="return water_check();">
     	<input type="hidden" name="shop_id" value="<c:out value="${shop.shopId}" />">
     	<input type="hidden" name="item_id" value="<c:out value="${item.itemId}" />">
 		<div class="card mb-3">
@@ -63,5 +64,7 @@
 </main>
 <%-- 共通jsファイルの読み込み --%>
 <jsp:include page="./include/jsfile.jsp" flush="true" />
+<%-- ページ固有jsファイルの読み込み --%>
+<script src="./static/js/edit.js"></script>
 </body>
 </html>
