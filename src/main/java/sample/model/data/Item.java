@@ -23,7 +23,7 @@ public class Item {
 	 * 商品ID
 	 */
 	private int itemId;
-	
+
 	/**
 	 * 商品名
 	 */
@@ -38,8 +38,22 @@ public class Item {
 	 * 商品価格
 	 */
 	private int itemPrice;
-	
-	/**
+
+	/**グループ確認事項getter/setter済
+     * 登録情報
+     */
+    private int itemReg;
+
+
+	public int getItemReg() {
+        return itemReg;
+    }
+
+    public void setItemReg(int itemReg) {
+        this.itemReg = itemReg;
+    }
+
+    /**
 	 * 商店IDを取得する。
 	 * @return 商店ID
 	 */
@@ -54,7 +68,7 @@ public class Item {
 	public void setShopId(int shopId) {
 		this.shopId = shopId;
 	}
-	
+
 	/**
 	 * 商品IDを取得する。
 	 * @return 商品ID
