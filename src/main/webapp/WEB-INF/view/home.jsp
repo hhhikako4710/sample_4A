@@ -5,6 +5,7 @@
   作成者    ：FLM Uzawa
   ------------------------------------------------------------------------------
   修正履歴 (修正日：担当者：修正内容)
+   [2025/8/18]：[RisaAndo/SYS]：[登録状態項目追加]
   ------------------------------------------------------------------------------%>
 
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
@@ -59,6 +60,10 @@
 						<tr>
 							<th class="table-primary w-25">価格</th>
 							<td id="item_price"></td>
+						</tr>
+						<tr> 
+						    <th class="table-primary w-25">登録状態</th>
+							<td id="item_reg"></td>
 						</tr>
 					</table>
 				</div>

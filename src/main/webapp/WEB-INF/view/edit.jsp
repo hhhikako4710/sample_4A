@@ -6,8 +6,8 @@
   ------------------------------------------------------------------------------
   修正履歴 (修正日：担当者：修正内容)
   [2025/8/18]：[HinakoTakada/SYS]：[商品名に未入力チェック追加]
-  [2025/8/18]：[HinakoTakada/SYS]：[商品説明に未入力チェック追加]
-  [2025/8/18]：[HinakoTakada/SYS]：[商品価格に未入力チェック追加]
+    [2025/8/18]：[HinakoTakada/SYS]：[商品説明に未入力チェック追加]
+    [2025/8/18]：[HinakoTakada/SYS]：[商品価格に未入力チェック追加]
   ------------------------------------------------------------------------------%>
 
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
@@ -52,7 +52,7 @@
 		                <label class="form-label" for="item_price">価格：</label>
 		                <input type="number" class="form-control" id="item_price" name="item_price"
 		                	value="<c:out value="${item.itemPrice}" />" min="1" max="9999999999" maxlength="10" required>
-	            	</div>
+	            	</div>            	
 				</div>
 				<div class="d-md-flex justify-content-md-end">
 					<button id="item_edit" type="submit" class="btn btn-primary">商品編集</button>
