@@ -5,6 +5,7 @@
   作成者    ：FLM Uzawa
   ------------------------------------------------------------------------------
   修正履歴 (修正日：担当者：修正内容)
+  [2025/8/18]：[RyosukeIwase/SYS]：[価格欄の下に仮登録欄の追加]
   ------------------------------------------------------------------------------%>
 
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
@@ -47,6 +48,11 @@
 	            	</div>
 					<div class="mb-3">
 		                <label class="form-label" for="item_price">価格：</label>
+		                <input type="number" class="form-control" id="item_price" name="item_price"
+		                	value="<c:out value="${item.itemPrice}" />" min="1" max="9999999999" maxlength="10">
+	            	</div>
+	            	<div class="mb-3">
+		                <label class="form-label" for="item_price">仮登録：</label>
 		                <input type="number" class="form-control" id="item_price" name="item_price"
 		                	value="<c:out value="${item.itemPrice}" />" min="1" max="9999999999" maxlength="10">
 	            	</div>
