@@ -21,6 +21,8 @@ public interface SystemConsts {
 			"jdbc:mysql://rds-005-risaando.cz30ispolc7o.ap-northeast-1.rds.amazonaws.com:3306/sampledb"
 			+ "?useSSL=false&allowPublicKeyRetrieval=true";
 
+
+
 	/**
 	 * DBユーザ
 	 */

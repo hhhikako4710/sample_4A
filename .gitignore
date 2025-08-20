@@ -4,3 +4,8 @@
 **/build/*
 **/bin/*
 
+<<<<<<< Upstream, based on origin/master
+=======
+
+/bin/
+>>>>>>> a6bb393 コミット
