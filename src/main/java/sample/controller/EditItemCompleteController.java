@@ -5,6 +5,7 @@
  * 作成者  ：FLM Uzawa
  *------------------------------------------------------------------------------
  * 修正履歴 (修正日：担当者：修正内容)
+ *   [2025/8/20]：[HinakoTakada/SYS]：[登録状態の入力値を三項演算子を用いて取得するように変更]
  *------------------------------------------------------------------------------
  */
 package sample.controller;
@@ -56,11 +57,7 @@ public class EditItemCompleteController extends HttpServlet {
 		item.setItemName(req.getParameter("item_name"));
 		item.setItemDescribe(req.getParameter("item_describe"));
 		item.setItemPrice(Integer.parseInt(req.getParameter("item_price")));
-	     item.setItemReg(Integer.parseInt(req.getParameter("item_reg")));
-
-
-
-
+	    item.setItemReg(Integer.parseInt(req.getParameter("item_reg")!=null ? "1" : "0"));
 
 		try (Connection con = ConnectionManager.getConnection()){
 
