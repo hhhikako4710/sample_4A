@@ -3,8 +3,4 @@
 **/.settings/*
 **/build/*
 **/bin/*
-<<<<<<< Upstream, based on origin/master
-/bin/
-=======
 
->>>>>>> da3c303 競合解消のためのコミット
