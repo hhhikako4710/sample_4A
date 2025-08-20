@@ -6,15 +6,12 @@
   ------------------------------------------------------------------------------
   修正履歴 (修正日：担当者：修正内容)
   [2025/8/18]：[HinakoTakada/SYS]：[商品名に未入力チェック追加]
-<<<<<<< Upstream, based on origin/master
   [2025/8/18]：[HinakoTakada/SYS]：[商品説明に未入力チェック追加]
   [2025/8/18]：[HinakoTakada/SYS]：[商品価格に未入力チェック追加]
   [2025/8/18]：[HinakoTakada/SYS]：[オプション課題1　フォーム送信時に商品編集画面の商品名入力チェックJavaScript関数の実行とJavaScriptの読み込み]
-=======
     [2025/8/18]：[HinakoTakada/SYS]：[商品説明に未入力チェック追加]
     [2025/8/18]：[HinakoTakada/SYS]：[商品価格に未入力チェック追加]
-
->>>>>>> 8a88cde 8/20　13:39コミット
+  [2025/8/20]：[RyosukeIwase/SYS]：[仮登録画面の追加]
   ------------------------------------------------------------------------------%>
 
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
@@ -61,10 +58,17 @@
 		                	value="<c:out value="${item.itemPrice}" />" min="1" max="9999999999" maxlength="10" required>
 	            	</div>            	
 				</div>
+				<div class="mb-3 d-flex align-items-center">
+						<label for="item_reg" class="mb-0 me-1" style="line-height: 1;">仮登録：</label>
+						<input class="form-check-input align-middle" type="checkbox" id="item_reg"
+							name="item_reg" style="margin-top: 0;">
+				</div>
+				
 				<div class="d-md-flex justify-content-md-end">
 					<button id="item_edit" type="submit" class="btn btn-primary">商品編集</button>
 				</div>
 			</div>
+			
 		<div>
 	</form>
 </main>
