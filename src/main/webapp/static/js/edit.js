@@ -2,7 +2,7 @@
  * 
  */
 
-//オプション課題1　商品追加画面での商品名入力チェック
+//オプション課題1　商品編集画面での商品名入力チェック
 function water_check(){
 	 //商品名情報取得 
 	 const name_add = document.getElementById("item_name").value.trim(); 
