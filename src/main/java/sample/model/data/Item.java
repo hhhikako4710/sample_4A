@@ -39,6 +39,7 @@ public class Item {
 	 */
 	private int itemPrice;
 
+
     /**グループ確認事項getter/setter済
      * 登録情報
      */
@@ -52,8 +53,11 @@ public class Item {
     public void setItemReg(int itemReg) {
         this.itemReg = itemReg;
     }
-   
+
    /**
+=======
+    /**
+>>>>>>> 8a88cde 8/20　13:39コミット
 	 * 商店IDを取得する。
 	 * @return 商店ID
 	 */
