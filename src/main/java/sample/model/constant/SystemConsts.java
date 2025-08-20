@@ -17,26 +17,26 @@ public interface SystemConsts {
 	/**
 	 * JDBC URL
 	 */
-	String JDBC_URL = 
-			"jdbc:mysql://localhost:3306/sampledb"
+	String JDBC_URL =
+			"jdbc:mysql://rds-005-risaando.cz30ispolc7o.ap-northeast-1.rds.amazonaws.com:3306/sampledb"
 			+ "?useSSL=false&allowPublicKeyRetrieval=true";
-	
+
 	/**
 	 * DBユーザ
 	 */
 	String JDBC_USER = "app_user";
-	
+
 	/**
 	 * DBユーザパスワード
 	 */
 	String JDBC_PASS = "password";
-	
+
 	/**
 	 * システムエラー画面JSP
 	 */
 	String ERROR_PAGE = "/WEB-INF/view/error.jsp";
 
-	
-	
-	
+
+
+
 }

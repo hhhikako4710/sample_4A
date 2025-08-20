@@ -8,6 +8,7 @@
   [2025/8/18]：[NaokiIshitsuka/SYS]：[商品名に未入力チェック追加]
   [2025/8/18]：[NaokiIshitsuka/SYS]：[商品説明に未入力チェック追加]
   [2025/8/18]：[NaokiIshitsuka/SYS]：[商品価格に未入力チェック追加]
+  [2025/8/18]：[HinakoTakada/SYS]：[オプション課題1　フォーム送信時に商品追加画面の商品名入力チェックJavaScript関数の実行とJavaScriptの読み込み]
   ------------------------------------------------------------------------------%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
@@ -26,7 +27,7 @@
 		<header class="row mb-3 mt-2">
 			<h1>商品追加</h1>
 		</header>
-		<form method="post" action="./add-complete">
+		<form method="post" action="./add-complete" onsubmit="return water_check();">
 			<input type="hidden" name="shop_id" value="<c:out value="${shop.shopId}" />">
 			<div class="card mb-3">
 				<div class="card-header">
@@ -67,5 +68,7 @@
 	</main>
 	<%-- 共通jsファイルの読み込み --%>
 	<jsp:include page="./include/jsfile.jsp" flush="true" />
+	<%-- ページ固有jsファイルの読み込み --%>
+	<script src="./static/js/add.js"></script>
 </body>
 </html>

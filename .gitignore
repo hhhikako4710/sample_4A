@@ -2,5 +2,8 @@
 .project
 **/.settings/*
 **/build/*
+<<<<<<< HEAD
 **/bin/*
 /bin/
+=======
+>>>>>>> branch 'master' of https://github.com/hhhikako4710/sample_4A.git

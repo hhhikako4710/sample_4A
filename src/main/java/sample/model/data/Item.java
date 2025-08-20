@@ -39,25 +39,21 @@ public class Item {
 	 */
 	private int itemPrice;
 
-	/**
-     * @return itemReg
+    /**グループ確認事項getter/setter済
+     * 登録情報
      */
+    private int itemReg;
+
+
     public int getItemReg() {
         return itemReg;
     }
 
-    /**
-     * @param itemReg セットする itemReg
-     */
     public void setItemReg(int itemReg) {
         this.itemReg = itemReg;
     }
-    /**
-     * 登録状態
-     */
-    private int itemReg;
-
-	/**
+   
+   /**
 	 * 商店IDを取得する。
 	 * @return 商店ID
 	 */
