@@ -58,6 +58,10 @@ public class EditItemCompleteController extends HttpServlet {
 		item.setItemPrice(Integer.parseInt(req.getParameter("item_price")));
 	     item.setItemReg(Integer.parseInt(req.getParameter("item_reg")));
 
+
+
+
+
 		try (Connection con = ConnectionManager.getConnection()){
 
 			ItemDao itemDao = new ItemDao(con);
