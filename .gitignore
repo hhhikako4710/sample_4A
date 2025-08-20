@@ -3,10 +3,10 @@
 **/.settings/*
 **/build/*
 **/bin/*
-
-<<<<<<< Upstream, based on origin/master
-=======
-
 /bin/
+<<<<<<< HEAD
 >>>>>>> a6bb393 コミット
 /build/
+=======
+/build/
+>>>>>>> branch 'master' of https://github.com/hhhikako4710/sample_4A.git
