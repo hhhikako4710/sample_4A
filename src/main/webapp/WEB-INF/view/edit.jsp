@@ -9,9 +9,10 @@
   [2025/8/18]：[HinakoTakada/SYS]：[商品説明に未入力チェック追加]
   [2025/8/18]：[HinakoTakada/SYS]：[商品価格に未入力チェック追加]
   [2025/8/18]：[HinakoTakada/SYS]：[オプション課題1　フォーム送信時に商品編集画面の商品名入力チェックJavaScript関数の実行とJavaScriptの読み込み]
-    [2025/8/18]：[HinakoTakada/SYS]：[商品説明に未入力チェック追加]
-    [2025/8/18]：[HinakoTakada/SYS]：[商品価格に未入力チェック追加]
+  [2025/8/18]：[HinakoTakada/SYS]：[商品説明に未入力チェック追加]
+  [2025/8/18]：[HinakoTakada/SYS]：[商品価格に未入力チェック追加]
   [2025/8/20]：[RyosukeIwase/SYS]：[仮登録画面の追加]
+  [2025/8/21]：[HinakoTakada/SYS]：[登録状態の表示と、変更時の更新ができるように、<input>にvalueの値や<c:choose>などを追加]  
   ------------------------------------------------------------------------------%>
 
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
@@ -61,7 +62,12 @@
 				<div class="mb-3 d-flex align-items-center">
 						<label for="item_reg" class="mb-0 me-1" style="line-height: 1;">仮登録：</label>
 						<input class="form-check-input align-middle" type="checkbox" id="item_reg"
-							name="item_reg" style="margin-top: 0;">
+							name="item_reg" style="margin-top: 0;" 
+							value="<c:out value="${item.itemReg}" />"
+							<c:choose>
+								<c:when test ='${item.itemReg =="1"}'>checked</c:when>
+								<c:otherwise>unchecked</c:otherwise>
+							</c:choose> />
 				</div>
 				
 				<div class="d-md-flex justify-content-md-end">
